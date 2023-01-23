@@ -7,7 +7,7 @@ import Data from '/data/basic.json';
 export function Nav(props) {
 	const [invisible, setInvisible] = useState(false);
 	const [isMenu, setMenu] = useState(false)
-	
+	const position = isMenu? "block":"none";
 	function Hamburger() {
 		setMenu(current =>! current);
 	};
@@ -30,6 +30,16 @@ export function Nav(props) {
 			 <div className={isMenu? nav.close:""}>
 			 <span onClick={Hamburger}  className={nav.hamburger}></span>
 				 </div>
+			 <div className={nav.menu} style={{display:position}}>
+				 <div className={nav.menu_body}>
+					 <Link href="/">Home</Link>
+					 <Link href="#">About</Link>
+					 <Link href="#">Designs</Link>
+					 <Link href="#">Projects</Link>
+					 <Link href="#">Gigs</Link>
+					 <Link href="/games">Games</Link>
+				 </div>
+		 </div>
 		 </nav>
 	 )
 }
