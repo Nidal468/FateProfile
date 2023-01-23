@@ -1,10 +1,12 @@
+import type { NextPage } from 'next'
+
 import {Nav} from './components/basic.js';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCreative} from "swiper";
 
 import games from '../styles/games.module.css'
 
-export default function Games(){
+const Games: NextPage = () => {
    return( 
 			 <div className={games.main}>
 				 <Nav/>
@@ -24,3 +26,4 @@ export default function Games(){
 			 </div>
 	 )
 }
+export default Games
