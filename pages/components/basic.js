@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import Link from 'next/link';
 
 import nav from '/styles/Nav.module.css'
 import Data from '/data/basic.json';
@@ -19,7 +20,7 @@ export function Nav() {
 			 <a href="#">Designs</a>
 			 <a href="#">Projects</a>
 			 <a href="#">Gigs</a>
-			 <a href="#">Contact</a>
+			 <a><Link href="/games">Games</Link></a>
 			 </div>
 			 <div className={nav.search}>
 				<i className="fi fi-rr-search" onClick={() => setInvisible(current =>! current)} style={{"display":invisible? "none":"block"}}></i>
