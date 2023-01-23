@@ -1,22 +1,29 @@
 .main{
-  background: #131419;
+  background: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("/images/tof.jpg");
   min-height: 100vh;
+	background-size: cover;
+	
 }
 .body{
 	width: 100%;
 	height: 100%;
-	padding: 20px;
+	padding: 40px;
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-evenly;
 	flex-direction: column;
 	
 }
+.body h2{
+	color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
 .banner{
 	width: 100%;
-	height: 200px;
+	background-size: cover;
 	border-radius: 12px;
-	background: #fff;
   margin: 40px 0px;
 
 
@@ -24,10 +31,15 @@
 .box_container{
 	width: 100%;
 	height: 100%;
-	background: #fff;
-	border-radius: 18px;
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5.6px);
+-webkit-backdrop-filter: blur(5.6px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	padding: 20px;
@@ -36,27 +48,29 @@
 	
 }
 .box{
-	width: 300px;
-	height: 500px;
-	border-radius: 18px;
+	width: 250px;
+	height: 400px;
 	color: #333;
 	padding: 20px;
-	background: #333;
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5.6px);
+	-webkit-backdrop-filter: blur(5.6px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
 	font-size: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	border: 1px solid #000;
+	margin: 20px 0px;
 	
 	
 }
 .box img{
 	width: 100%;
-	height: 200px;
 	border-radius: 12px;
-	background: #fff;
-	border: 1px solid #000;
 	
 }
 .teraria{
@@ -66,10 +80,14 @@
 	justify-content: space-between;
 	flex-direction: column;
 	height: 200px;
-	border-radius: 12px;
-	background: #fff;
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5.6px);
+	-webkit-backdrop-filter: blur(5.6px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
 	padding: 10px;
-	border: 1px solid #000;
 	
 
 }
@@ -83,6 +101,6 @@
 	margin: 0px 10px;
 	position: relative;
 	right: 10px;
-	color: #FBD3FF;
+	color: red;
 	
 }

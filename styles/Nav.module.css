@@ -24,7 +24,7 @@
 	font-family: 'Roboto Condensed', sans-serif;
 	
 }
-.nav_options a:hover{
+.nav_options Link:hover{
 	color: cyan;
 	
 }
