@@ -1,6 +1,6 @@
 .main{
 	min-height: 100vh;
-	background: #1F1F1F;
+	background: #171717;
 	
 }
 .hero{
@@ -17,12 +17,23 @@
 	width: 100%;
 	display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px 30px;
+	color: #fff;
+	
 }
 
 .hero_container h1{
 	font-size: 50px;
+	border-right: 2px solid #fff;
+	margin: 20px;
+	padding: 10px;
+	
+}
+.hero_container h1 i{
+	animation: icon 8s infinite;
+	margin: 0px 10px;
+	
 	
 }
 .hero_info{
@@ -32,6 +43,7 @@
 	align-items: flex-start;
 	justify-content: space-between;
 	flex-direction: column;
+	margin: 20px;
 	
 }
 .hero_info p{
@@ -51,6 +63,7 @@
 	width: 20px;
 	border-radius: 50%;
 	background: #fff;
+	border: 1px solid #fff;
 	
 }
 .hero_year{
@@ -68,26 +81,72 @@
 .about_container{
 	width: 100%;
 	height: 300px;
-	background: #222222;
-	color: #fff;
+	background: #F2F3F4;
+	color: #333;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 10px 20px;
+	box-shadow: inset 12px 12px 13px #d0d1d2,
+            inset -12px -12px 13px #ffffff;
+	flex-wrap: wrap;
 	
 }
-.swiper{
-	width: 360px;
+.contact{
+	width: 300px;
+	height: 230px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-direction: column;
+	margin: 20px;
+	
 }
-.swiper img{
-	width: 90%;
-	border: 1px solid #fff;
-	border-radius: 12px;
+.contact p{
+	font-size: 8px;
+	
+}
+.link{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 80%;
+	
+}
+.contact a{
+	font-weight: 500;
+	border-bottom: 1px solid lightblue;
+	position: relative;
+	bottom: 5px;
+	
+	
+}
+.certificate_container{
+	width: 100%;
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+	color: #fff;
+}
+.certificate_info{
+	width: 100%;
+	margin: 20px 0px;
+	padding: 10px;
 	
 }
 @media only screen and (max-width: 576px){
-	.swiper{
-		display: none;
+	.hero{
+		height: 400px;
+		
+	}
+	.hero_container{
+		flex-wrap: wrap;
+		font-size: 8px;
+		
+	}
+	.hero_container h1{
+		font-size: 16px;
 		
 	}
 	.main{
@@ -97,5 +156,31 @@
 	.hero_year{
 		width: 100px;
 		
+	}
+	.about_container{
+		height: 700px;
+		
+	}
+}
+@keyframes icon{
+	0%{
+		color: #fff;
+    
+    	
+	}
+	25%{
+		color: cyan;
+		
+	}
+	50%{
+		color: purple;
+		
+	}
+	75%{
+		color: pink;
+		
+	}
+	100%{
+		color: red;
 	}
 }

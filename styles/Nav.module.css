@@ -69,7 +69,7 @@
 	height: var(--hamHeight);
 	background: #fff;
 	transform: translateY(-8px);
-	transition: 1s;
+	transition: 0.5s;
 }
 .close .hamburger::before{
 	transform: translateY(0) rotate(45deg);
@@ -90,20 +90,23 @@
 	background: #fff;
 	box-shadow: 0px -8px 0px #fff;
 	transform: translateY(8px);
-	transition: 1s;
+	transition: 0.5s;
 }
 .menu{
 	width: 200px;
-	height: 100%;
+	height: 500px;
 	padding: 10px;
 	background: #333;
-	border: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #fff;
 	position: absolute;
 	top: 0;
 	right: 0px;
 	transition: 1s;
 	z-index: 20;
 	display: none;
+	border-bottom-left-radius: 12px;
+	transition: 0.5s;
 	
 }
 .menu_body{

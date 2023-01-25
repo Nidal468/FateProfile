@@ -20,7 +20,7 @@ const Games: NextPage = () => {
 					 <img src={tof.img}/>
 				 <div className={games.teraria}>
 					 <h3>{tof.title}</h3>
-					 <p style={{fontSize:"8px", bottom:"20px"}}>{tof.info}</p>
+					 <p style={{bottom:"20px"}}>{tof.info}</p>
 					 <p><br/><a href={tof.link}>{tof.link_name}</a><br/><a href={tof.link1}>{tof.link_name1}</a><br/>{tof.address}<br/>{tof.id}</p>
 				 </div>
 					

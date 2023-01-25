@@ -1,6 +1,14 @@
 [
 	{
 		"name":"Abu Saleh", 
-		"title":"Full stack developer"
+		"title":"Full stack developer",
+		"work_title":"I am React developer and Graphic designer from Bangladesh",
+		"work":"I have worked as a mentor and a private tutor for computer science students and now I am working as a Freelancer on Fiverr, Upwork and many more",
+		"about_title":"You need both talent and hard work to be successful in life", 
+		"about":"I mainly like to do frontend work and graphic designing. I have been using react for about more then a year and now I have started learning next js after seeing how many things it offers even this website is made by next js", 
+		"contact_title":"Contact me any time", 
+		"contact":"If you want to ask any questions related to gigs or just want some advice on your codes contact me anytime. I am usually always online except when I am asleep which is like at 10pm or 9pm.", 
+		"certificate":"Here is my Certificate collection", 
+		"certificate_info":"I have done multiple course and have achieved many certificates from different courses and hopefully this will make you trust my skills"
 	}
 ]
