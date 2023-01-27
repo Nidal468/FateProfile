@@ -22,23 +22,28 @@
 	color: #fff;
 	
 }
-
-.hero_container h1{
-	font-size: 50px;
-	border-right: 2px solid #fff;
-	margin: 20px;
+.hero_text{
+	width: 400px;
 	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	
 	
 }
-.hero_container h1 i{
-	animation: icon 8s infinite;
-	margin: 0px 10px;
+.hero_text h1{
+	font-size: 50px;
 	
+}
+.hero_text small{
+	position: relative;
+	bottom: 50px;
 	
 }
 .hero_info{
 	width: 300px;
-	height: 230px;
+	height: 250px;
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
@@ -128,11 +133,39 @@
   justify-content: space-between;
   padding: 10px 30px;
 	color: #fff;
+	flex-direction: column;
+	
 }
 .certificate_info{
 	width: 100%;
 	margin: 20px 0px;
 	padding: 10px;
+
+}
+.none{
+	width: 100%;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 16px;
+	border: 1px solid #fff;
+	
+}
+#notice{
+	display: none;
+	
+}
+#icon{
+	font-size: 60px;
+	
+}
+.none:hover #notice{
+	display: block;
+	
+}
+.none:hover #icon{
+	display: none;
 	
 }
 @media only screen and (max-width: 576px){
@@ -145,8 +178,20 @@
 		font-size: 8px;
 		
 	}
-	.hero_container h1{
+	.hero_text{
+		width: 200px;
+		padding: 10px;
+	}
+	.hero_text small{
+		bottom: 15px;
+		
+	}
+	.hero_text h1{
 		font-size: 16px;
+		
+	}
+	.hero_info{
+		height: 230px;
 		
 	}
 	.main{
@@ -161,26 +206,37 @@
 		height: 700px;
 		
 	}
+	.none{
+		height: 300px;
+		
+	}
+	#icon{
+		font-size: 40px;
+		
+	}
+	#notice{
+		font-size: 10px;
+		
+	}
 }
-@keyframes icon{
+
+@keyframes name{
 	0%{
-		color: #fff;
-    
-    	
-	}
-	25%{
-		color: cyan;
+		opacity: 0;
+		width: 0;
 		
 	}
-	50%{
-		color: purple;
+	30%{
+		opacity: 30%;
+		width: 70px;
 		
 	}
-	75%{
-		color: pink;
-		
+	70%{
+		opacity: 70%;
+		width: 150px;
 	}
 	100%{
-		color: red;
+		opacity: 100%;
+		width: 200px;
 	}
 }

@@ -14,13 +14,15 @@ const Home: NextPage = () => {
       <Head>
         <title>About Me</title>
         <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.ico" />
       </Head>
       <main className={styles.main}>
 				<div className={styles.hero}>
 				<Nav/>
 					<div className={styles.hero_container}>
-						<h1><i className="fi fi-rr-share"></i>{Data[0].name}</h1>
+						<div className={styles.hero_text}><h1>{Data[0].name}</h1>
+							<small>Connect with me on LinkedIn</small>
+						</div>
 					<div className={styles.hero_info}>
 						<small>Title</small>
 						<h3>{Data[0].work_title}</h3>
@@ -52,6 +54,10 @@ const Home: NextPage = () => {
 					<div className={styles.certificate_info}>
 						<h3>{Data[0].certificate}</h3>
 						<p>{Data[0].certificate_info}</p>
+					</div>
+					<div className={styles.none}>
+						<h1 id={styles.icon}>+</h1>
+						<h1 id={styles.notice}>You don't have permission</h1>
 					</div>
 				</div>
       </main>

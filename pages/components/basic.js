@@ -2,6 +2,7 @@ import {useState} from 'react';
 import Link from 'next/link';
 
 import nav from '/styles/Nav.module.css'
+import member from '/styles/member.module.css'
 import Data from '/data/basic.json';
 
 export function Nav(props) {
@@ -17,7 +18,7 @@ export function Nav(props) {
 			 <div className={nav.nav_options}>
 			 <Link href="/">Home</Link>
 			 <Link href="#">About</Link>
-			 <Link href="#">Designs</Link>
+			 <Link href="/designs">Designs</Link>
 			 <Link href="#">Projects</Link>
 			 <Link href="#">Gigs</Link>
 			 <Link href="/games">Games</Link>
@@ -34,12 +35,23 @@ export function Nav(props) {
 				 <div className={nav.menu_body}>
 					 <Link href="/">Home</Link>
 					 <Link href="#">About</Link>
-					 <Link href="#">Designs</Link>
+					 <Link href="/designs">Designs</Link>
 					 <Link href="#">Projects</Link>
 					 <Link href="#">Gigs</Link>
 					 <Link href="/games">Games</Link>
 				 </div>
 		 </div>
 		 </nav>
+	 )
+}
+export function Member(props) {
+   return(
+		 <div className={member.body}>
+			 <img src={props.img} />
+			 <div className={member.text}>
+				 <h4>{props.name}</h4>
+				 <p>{props.title}</p>
+			 </div>
+		 </div>
 	 )
 }

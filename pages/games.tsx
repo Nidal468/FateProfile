@@ -26,7 +26,7 @@ const Games: NextPage = () => {
 					
 				 </div>
 							)
-			 })};
+			 })}
 				 
 					 </div>
 				 </div>
