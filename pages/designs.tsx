@@ -1,7 +1,8 @@
 import type{NextPage} from 'next';
 
-import {Nav, Member} from './components/basic.js';
+import {Nav} from './components/basic.js';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import design from '../data/design.json';
 
@@ -15,14 +16,16 @@ const designs: NextPage = () =>{
 			<div className={gallery.hero}>
 			{design.map(project => {
 				return(
-				<div className={gallery.image}>
+					
+				<div className={gallery.image} key={project.id}>
+					<a href={project.link} className={gallery.link}>
 					<div className={gallery.image_box}>
 						<img src={project.image}/>
 						<div className={gallery.image_flex}>
 						<img src={project.image}/>
 						<img src={project.image}/>
 						</div>
-					</div>
+					</div></a>
 				</div>
 				)
 			})}

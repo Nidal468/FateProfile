@@ -1,42 +1,27 @@
 [
-	{
-		"img_1":"images/fiverr-logo.png",
-		"name_1":"Abu Saleh", 
-		"title_1":"Frontend Developer",
+	{	
+		"id":"0",
 		"image":"", 
-		"name":"vr_shop", 
-		"info":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-	},
-	{
-		"img_1":"images/fiverr-logo.png",
-		"name_1":"Abu Saleh", 
-		"title_1":"Frontend Developer",
-		"image":"", 
-		"name":"vr_shop", 
-		"info":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+		"link":"./url/soft_landing_page" 
 	}, 
-	{
-		"img_1":"images/fiverr-logo.png",
-		"name_1":"Abu Saleh", 
-		"title_1":"Frontend Developer",
+	{	
+		"id":"1",
 		"image":"", 
-		"name":"vr_shop", 
-		"info":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+		"link":"./url/soft_landing_page" 
 	}, 
-	{
-		"img_1":"images/fiverr-logo.png",
-		"name_1":"Abu Saleh", 
-		"title_1":"Frontend Developer",
+	{	
+		"id":"2",
 		"image":"", 
-		"name":"vr_shop", 
-		"info":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+		"link":"./url/soft_landing_page" 
 	}, 
-	{
-		"img_1":"images/fiverr-logo.png",
-		"name_1":"Abu Saleh", 
-		"title_1":"Frontend Developer",
+	{	
+		"id":"3",
 		"image":"", 
-		"name":"vr_shop", 
-		"info":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+		"link":"./url/soft_landing_page" 
+	}, 
+	{	
+		"id":"4",
+		"image":"", 
+		"link":"./url/soft_landing_page" 
 	}
 ]

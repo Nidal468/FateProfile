@@ -2,7 +2,6 @@ import {useState} from 'react';
 import Link from 'next/link';
 
 import nav from '/styles/Nav.module.css'
-import member from '/styles/member.module.css'
 import Data from '/data/basic.json';
 
 export function Nav(props) {
@@ -42,16 +41,5 @@ export function Nav(props) {
 				 </div>
 		 </div>
 		 </nav>
-	 )
-}
-export function Member(props) {
-   return(
-		 <div className={member.body}>
-			 <img src={props.img} />
-			 <div className={member.text}>
-				 <h4>{props.name}</h4>
-				 <p>{props.title}</p>
-			 </div>
-		 </div>
 	 )
 }
