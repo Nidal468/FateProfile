@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import nav from '/styles/Nav.module.css'
 import Data from '/data/basic.json';
+import TextField  from '@mui/material/TextField';
 
 export function Nav(props) {
 	const [invisible, setInvisible] = useState(false);
@@ -12,7 +13,7 @@ export function Nav(props) {
 		setMenu(current =>! current);
 	};
    return(
-		 <nav className={nav.nav_container} style={{borderBottom:props.border, color:props.color}}>
+		 <nav className={nav.nav_container} style={{borderBottom:props.border, color:props.color, position:props.position}}>
 		 <h3>{Data[0].name}</h3>
 			 <div className={nav.nav_options}>
 			 <Link href="/">Home</Link>
@@ -24,7 +25,7 @@ export function Nav(props) {
 			 </div>
 			 <div className={nav.search}>
 				<i className="fi fi-rr-search" onClick={() => setInvisible(current =>! current)} style={{"display":invisible? "none":"block"}}></i>
-				<input type="text" placeholder="search" style={{"width":invisible? "100%":"0","opacity":invisible? "100%":"0"}} />
+				<TextField id="outlined-basic" label="Search" variant="outlined" style={{"width":invisible? "100%":"0","opacity":invisible? "100%":"0"}} className={nav.textfield}/>
 						<i className="fi fi-rr-angle-right" onClick={() => setInvisible(current =>! current)} style={{"display":invisible? "block":"none"}}></i>
 					</div>
 			 <div className={isMenu? nav.close:""}>
