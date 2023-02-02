@@ -1,8 +1,6 @@
 import type{NextPage} from 'next';
 
 import {Nav} from './components/basic.js';
-import Image from 'next/image';
-import Link from 'next/link';
 
 import design from '../data/design.json';
 

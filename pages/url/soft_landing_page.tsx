@@ -1,10 +1,11 @@
-import type{NextPage} from 'next';
 import {Nav} from '../components/basic.js';
 import Button from '@mui/material/Button';
-
 import soft from '/styles/soft_landing_page.module.css'
+import {useState} from 'react';
 
-const softs: NextPage = () =>{
+export default function Softs(){
+	const [isDisplay, setIsDisplay] = useState(false);
+	
 	return(
 		<div className={soft.main}>
 			<Nav border="1px solid #fff" position="absolute"/>
@@ -47,10 +48,44 @@ const softs: NextPage = () =>{
 				</div>
 			</div>
 			<div className={soft.gig_list}>
-				<h2></h2>
+				<div className={soft.filter_body}>
+					<i className="fi fi-rr-filter" onClick={() => setIsDisplay(current =>! current)}></i>
+					<h2>Use the filter to navigate through my gigs</h2>
+				</div>
+				<div className={soft.filter} style={{display:isDisplay? "flex":"none"}}>
+					<span><input type="radio" name="filter"/><label>Landing page</label></span>
+					<span><input type="radio" name="filter"/><label>E commerce website</label></span>
+					<span><input type="radio" name="filter"/><label>Business card</label></span>
+					<span><input type="radio" name="filter"/><label>Wordpress</label></span>
+					<span><input type="radio" name="filter"/><label>Web design</label></span>
+					<span><input type="radio" name="filter"/><label>Graphic design</label></span>
+				</div>
+				<div className={soft.items_container}>
+					<div className={soft.items_body}>
+						<div className={soft.items}>
+							<img src="/images/dark_hero.png"/>
+							<div className={soft.items_info}>
+								<div className={soft.items_offer}>
+									<span>Basic</span>
+									<span>Standard</span>
+									<span>Premium</span>
+								</div>
+								<div className={soft.items_offer_text}>
+									<h4>Classic Html and CSS website</h4>
+									<p>Responsive Html, CSS and Java Script functional website with Jquery</p>
+									<div id={soft.list}>
+										<span><h6>Revisions</h6><p>Unlimited</p></span>
+										<span><h6>Delivery Days</h6><p>2 Days</p></span>
+										<span><h6>Number of pages</h6><p>4</p></span>
+										<span><h6>Content Upload</h6><p>Yes</p></span>
+									</div>
+									<Button/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	)
 };
-
-export default softs;

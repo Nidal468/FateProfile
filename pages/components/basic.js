@@ -1,5 +1,5 @@
-import {useState} from 'react';
 import Link from 'next/link';
+import {useState} from 'react';
 
 import nav from '/styles/Nav.module.css'
 import Data from '/data/basic.json';

@@ -1,7 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-
 import {Nav} from './components/basic.js';
 import Data from '../data/basic.json';
 

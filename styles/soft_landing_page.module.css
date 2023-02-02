@@ -112,6 +112,142 @@
 	border: 1px solid linear-gradient(rgb(40,150,250),rgb(40,90,250));
 	
 }
+.filter_body{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	
+}
+.filter_body i{
+	font-size: 18px;
+	border-radius: 10px;
+	background: #ffffff;
+	box-shadow:  5px 5px 10px #c3c3c3,
+             -5px -5px 10px #ffffff;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.filter_body h2{
+	margin-left: 0px;
+	
+	width: 55%;
+	
+}
+.filter{
+	width: 520px;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 10px;
+	background: #ffffff;
+	box-shadow:  10px 10px 20px #c3c3c3,
+             -10px -10px 20px #ffffff;
+	flex-wrap: wrap;
+	margin-left: 200px;
+	
+}
+.filter span{
+	width: 250px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0px 5px;
+	
+	
+}
+.filter span label{
+	font-weight: 600;
+	margin-left: 10px;
+
+}
+.items_container{
+	width: 100%;
+	height: 400px;
+	padding: 20px;
+	margin: 60px 0px;
+	
+}
+.items{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 10px;
+	
+}
+.items img{
+	width: 50%;
+	border: 1px solid #333;
+	border-radius: 12px;
+	
+}
+.items_info{
+	width: 45%;
+	height: 100%;
+	background: #ffffff;
+	box-shadow:  8px 8px 11px #ededed,
+             -8px -8px 11px #ffffff;
+	
+}
+.items_offer{
+	width: 100%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #333;
+	
+}
+.items_offer span{
+	width: 100%;
+	height: 100%;
+	background: #e3edf7;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.items_offer span:hover{
+	background: #333;
+	color: #fff;
+	
+}
+.items_offer_text{
+	width: 100%;
+	padding: 10px;
+	height: 96%;
+	font-size: 16px;
+	
+}
+#list{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	padding: 10px;
+	
+	
+}
+#list span{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 30px;
+	
+}
 @keyframes pathAnim-0{
 	0%{
               d: path("M 0,400 C 0,400 0,200 0,200 C 102.07655502392345,174.39234449760767 204.1531100478469,148.7846889952153 298,157 C 391.8468899521531,165.2153110047847 477.46411483253587,207.25358851674642 583,209 C 688.5358851674641,210.74641148325358 813.9904306220096,172.20095693779905 898,167 C 982.0095693779904,161.79904306220095 1024.5741626794259,189.94258373205741 1108,201 C 1191.4258373205741,212.05741626794259 1315.712918660287,206.0287081339713 1440,200 C 1440,200 1440,400 1440,400 Z");
