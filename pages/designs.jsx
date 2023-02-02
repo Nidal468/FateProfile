@@ -1,5 +1,3 @@
-import type{NextPage} from 'next';
-
 import {Nav} from './components/basic.js';
 
 import design from '../data/design.json';
@@ -7,7 +5,7 @@ import design from '../data/design.json';
 import gallery from '../styles/gallery.module.css'
 
 
-const designs: NextPage = () =>{
+function Designs(){
 	return(
 		<div className={gallery.main}>
 			<Nav/>
@@ -32,4 +30,4 @@ const designs: NextPage = () =>{
 	)
 };
 
-export default designs;
+export default Designs;

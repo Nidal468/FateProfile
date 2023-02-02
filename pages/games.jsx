@@ -1,12 +1,10 @@
-import type { NextPage } from 'next'
-
 import {Nav} from './components/basic.js';
 
 import games from '../styles/games.module.css'
 
 import tofs from '../data/games.json';
 
-const Games: NextPage = () => {
+function Games(){
    return( 
 			 <div className={games.main}>
 				 <Nav border="1px solid #fff"/>
@@ -16,7 +14,7 @@ const Games: NextPage = () => {
 					 <div className={games.box_container}>
 						  {tofs.map(tof => {
 				return(
-					<div className={games.box}> 
+					<div className={games.box} key={tof.id}> 
 					 <img src={tof.img}/>
 				 <div className={games.teraria}>
 					 <h3>{tof.title}</h3>

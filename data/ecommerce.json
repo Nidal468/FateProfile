@@ -1,0 +1,32 @@
+  [
+  {
+		"name":"Classic Html and CSS website", 
+		"info":"Responsive Html, CSS and Java Script functional website with Jquery", 
+		"image":"/images/vr_hero.png", 
+		"item_1_name":"Revisions",
+		"item_2_name":"Delivery Days",
+		"item_3_name":"Number of pages",
+		"item_4_name":"Content Upload",
+		"item_1_info":"Unlimited",
+		"item_2_info":"2 Days",
+		"item_3_info":"4",
+		"item_4_info":"Yes",
+		"link":"#", 
+		"id":"1"
+	}, 
+	{
+		"name":"Classic Html and CSS website", 
+		"info":"Responsive Html, CSS and Java Script functional website with Jquery", 
+		"image":"/images/vr_hero.png", 
+		"item_1_name":"Revisions",
+		"item_2_name":"Delivery Days",
+		"item_3_name":"Number of pages",
+		"item_4_name":"Content Upload",
+		"item_1_info":"Unlimited",
+		"item_2_info":"2 Days",
+		"item_3_info":"4",
+		"item_4_info":"Yes",
+		"link":"#", 
+		"id":"1"
+	}
+	] 

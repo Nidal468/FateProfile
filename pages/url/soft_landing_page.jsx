@@ -1,11 +1,14 @@
 import {Nav} from '../components/basic.js';
 import Button from '@mui/material/Button';
 import soft from '/styles/soft_landing_page.module.css'
+import firsts from '/data/landingpage.json';
+import seconds from '/data/ecommerce.json';
 import {useState} from 'react';
 
-export default function Softs(){
+function Softs(){
 	const [isDisplay, setIsDisplay] = useState(false);
-	
+	const [isFilter, setIsFilter] = useState(firsts);
+
 	return(
 		<div className={soft.main}>
 			<Nav border="1px solid #fff" position="absolute"/>
@@ -49,21 +52,23 @@ export default function Softs(){
 			</div>
 			<div className={soft.gig_list}>
 				<div className={soft.filter_body}>
-					<i className="fi fi-rr-filter" onClick={() => setIsDisplay(current =>! current)}></i>
+					<i className="fi fi-rr-filter" onClick={() => setIsDisplay(current =>! current)} style={{background: isDisplay? "#333" :"", color:isDisplay? "#fff" :""}}></i>
 					<h2>Use the filter to navigate through my gigs</h2>
 				</div>
 				<div className={soft.filter} style={{display:isDisplay? "flex":"none"}}>
-					<span><input type="radio" name="filter"/><label>Landing page</label></span>
-					<span><input type="radio" name="filter"/><label>E commerce website</label></span>
+					<span><input type="radio" name="filter" onClick={() => setIsFilter(firsts)} defaultChecked/><label>Landing page</label></span>
+					<span><input type="radio" name="filter" onClick={() => setIsFilter(seconds)} /><label>E commerce website</label></span>
 					<span><input type="radio" name="filter"/><label>Business card</label></span>
 					<span><input type="radio" name="filter"/><label>Wordpress</label></span>
 					<span><input type="radio" name="filter"/><label>Web design</label></span>
 					<span><input type="radio" name="filter"/><label>Graphic design</label></span>
 				</div>
-				<div className={soft.items_container}>
+				{isFilter.map(filter => {
+			return(
+			<div className={soft.items_container} key={filter.id}>
 					<div className={soft.items_body}>
 						<div className={soft.items}>
-							<img src="/images/dark_hero.png"/>
+							<img src={filter.image} />
 							<div className={soft.items_info}>
 								<div className={soft.items_offer}>
 									<span>Basic</span>
@@ -71,21 +76,24 @@ export default function Softs(){
 									<span>Premium</span>
 								</div>
 								<div className={soft.items_offer_text}>
-									<h4>Classic Html and CSS website</h4>
-									<p>Responsive Html, CSS and Java Script functional website with Jquery</p>
+									<h4>{filter.name}</h4>
+									<p>{filter.info}</p>
 									<div id={soft.list}>
-										<span><h6>Revisions</h6><p>Unlimited</p></span>
-										<span><h6>Delivery Days</h6><p>2 Days</p></span>
-										<span><h6>Number of pages</h6><p>4</p></span>
-										<span><h6>Content Upload</h6><p>Yes</p></span>
+										<span><h6>{filter.item_1_name}</h6><p>{filter.item_1_info}</p></span>
+										<span><h6>{filter.item_2_name}</h6><p>{filter.item_2_info}</p></span>
+										<span><h6>{filter.item_3_name}</h6><p>{filter.item_3_info}</p></span>
+										<span><h6>{filter.item_4_name}</h6><p>{filter.item_4_info}</p></span>
 									</div>
-									<Button/>
+									<Button variant="contained" href={filter.link}>View</Button>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				) 
+				})};
 			</div>
 		</div>
 	)
 };
+export default Softs
